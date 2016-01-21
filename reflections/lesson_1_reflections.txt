@@ -25,6 +25,7 @@ List of git commands:
 - git branch					( with no arguments shows current branch)
 	* git branch [new branch name] (creates a new branch)
 - git add [file name] 			(add file to staging area)
+	* git add . -A 				(deleted files to staging area)
 - git reset [file name] 		(removw file from staging area) 
 	* git reset --hard 			(discard any changes in the working/staging area)
 - git commit -m "Commit message"(Commit with comment)
