@@ -7,6 +7,11 @@ one commit per logical change.
 
 
 List of git commands:
+
+- git remote add [origin](name of remote) [web address of repository]
+- git remote -v (verbose of the remote)
+- git push [name of remote] [branch want to push]
+
 - git log / git log --stat 		(log of the commits)
 	*git log --graph --oneline
 	*git log -n [num]	(shows x numb numbers of commits)
