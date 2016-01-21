@@ -9,6 +9,7 @@ one commit per logical change.
 List of git commands:
 - git log / git log --stat 		(log of the commits)
 	*git log --graph --oneline
+	*git log -n [num]	(shows x numb numbers of commits)
 - git show[Commit ID]	(shows different between commit and its parrent commit)
 - git diff [first id] [second id] 					(compares diff of different versions by their id's)
 	*no arguments, compares files in working area to staging area
@@ -29,7 +30,7 @@ Creating repositories
 - git init 						(make a folder repository)
 - git clone [URL] 				(create clone of the repository)
 
-Configurations
+Configurationsa
 - git config --global color.ui auto (color the differences of commits)
 
 
