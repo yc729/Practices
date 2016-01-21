@@ -1,4 +1,4 @@
-Version control
+clearVersion control
 	- compares line by line
 	- Easy to spot differences
 
@@ -7,16 +7,27 @@ one commit per logical change.
 
 
 List of git commands:
-- git log / git log --stat (log of the commits)
-- git diff  (compares diff of different versions by their id's)
-- git checkout
+- git log / git log --stat 		(log of the commits)
+	*git log --graph --oneline
+- git show[Commit ID]	(shows different between commit and its parrent commit)
+- git diff [first id] [second id] 					(compares diff of different versions by their id's)
+	*no arguments, compares files in working area to staging area
+	*git diff --staged, compares staging area to most recent commit
+- git checkout [branch name] 
 - git status
-- git add [file name] (add file to staging area)
-- git reset [file name] (removed file from staging area) 
-
+- git merge [branch] [branch]	(must be in the branch you want to merge into)
+- git branch					( with no arguments shows current branch)
+	* git branch [new branch name] (creates a new branch)
+- git add [file name] 			(add file to staging area)
+- git reset [file name] 		(removw file from staging area) 
+	* git reset --hard 			(discard any changes in the working/staging area)
+- git commit -m "Commit message"(Commit with comment)
+			COMMENT MESSAGE STYLE
+				http://udacity.github.io/git-styleguide/
+git gc	(grabage collection)
 Creating repositories
-- git init (make a folder repository)
-- git clone [URL] (create clone of the repository)
+- git init 						(make a folder repository)
+- git clone [URL] 				(create clone of the repository)
 
 Configurations
 - git config --global color.ui auto (color the differences of commits)
